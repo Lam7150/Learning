@@ -1,9 +1,6 @@
-package com.company;
-import java.util.Arrays;
-
 public class Recursion {
-    public static void main(String[] args) {
-
+    public static void main(String args[]) {
+        System.out.println(fibonacci(5));
     }
 
     public static int fibonacci(int n) {
