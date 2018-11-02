@@ -1,7 +1,6 @@
 # Lam Tran
 # 2016 - Present
-# Catch-all Python file for learning and experiments
-
+# Catch-all Python file for learning, experiments, and tests
 
 import nltk
 import pylab
