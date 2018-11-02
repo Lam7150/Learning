@@ -3,7 +3,7 @@
  * 2015
  * 
  * C Tests
- * A C test file for C experiments
+ * Catch-all C file for learning and experiments
  */
 #include <stdio.h>
 
