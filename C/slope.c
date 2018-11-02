@@ -1,3 +1,11 @@
+/**
+ * Lam Tran
+ * 2016
+ * 
+ * Slope Calculator
+ * Calculates slope of a line given two points and graphs it
+ */
+
 #include <cs50.h>
 #include <stdio.h>
 

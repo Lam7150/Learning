@@ -1,4 +1,10 @@
-//Magic 8 ball program
+/**
+ * Lam Tran
+ * 2015
+ * 
+ * Magic 8 Ball
+ * Produces random answer to any given question
+ */
 
 #include <stdio.h>
 #include <time.h>

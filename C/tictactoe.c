@@ -1,4 +1,10 @@
-//TicTacToe
+/**
+ * Lam Tran
+ * 2016
+ * 
+ * Tic Tac Toe
+ * A program to play Tic Tac Toe!
+ */
 #include <stdio.h>
 #include <cs50.h>
 

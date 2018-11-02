@@ -1,3 +1,11 @@
+/**
+ * Lam Tran
+ * 2016
+ * 
+ * Tax Calculator
+ * An experimental tax calculator made to determine whether increasing dividends lowers tax with large quantities
+ */
+
 #include <cs50.h>
 #include <stdio.h>
 

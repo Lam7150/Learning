@@ -1,7 +1,14 @@
-/* Tests collatz conjecture: Every number will eventually return to 1 by doing the following
-                                 If n = 1, stop;
-                                 if n is even, repeat this process with n/2;
-                                 if n is odd, repeat this process with 3n + 1; */
+/**
+ * Lam Tran
+ * 2015
+ * 
+ * Collatz Conjecture
+ * Tests collatz conjecture: Every number will eventually return to 1 by doing the following
+ *                           If n = 1, stop;
+ *                           if n is even, repeat this process with n/2;
+ *                              if n is odd, repeat this process with 3n + 1;
+ */
+
 #include <stdio.h>
 
 int collatz(int n);

@@ -1,4 +1,11 @@
-//Calculates the GPA of a student from CHS
+/**
+ * Lam Tran
+ * 2015
+ * 
+ * GPA Calculator
+ * Calculates the GPA of a student from CHS
+ */
+
 #include <stdio.h>
 
 //Declaring functions

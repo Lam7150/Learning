@@ -1,6 +1,15 @@
+/**
+ * Lam Tran
+ * 2017
+ * 
+ * Picture Printer
+ * Given an ascii picture in a txt file, prints it out in the console
+ */
+
 #include <cs50.h>
 #include <stdio.h>
-// fuck it mask off doesnt work
+// needs to be fixed 
+
 int main (void)
 {
     char line[50];
