@@ -1,34 +1,34 @@
 /**
  * Lam Tran
  * November 2018
+ * CS125
  *
  * Algorithms Module
  */
 
 public class Algorithms {
-    /**
-     * bool LinearSearch(int array[], int toFind) {
-     *     for (int i = 0; i < array.length; i++) {
-     *         if (array[i] == toFind) {
-     *            return true;
-     *         }
-     *     }
-     *     return false;
-     * }
-     *
-     *
-     * int[] bubbleSort(int array[]) {
-     *     for (int i = 1; i < array.length(); i++) {
-     *         if (array[i] < array[i-1]) {
-     *             int temp = array[i];
-     *             array[i] = array[i-1];
-     *             array[i-1] = temp;
-     *         }
-     *     }
-     *     return array;
-     * }
-     *
-     * function MergeSort (int array[]) {
+
+     public static boolean LinearSearch(int array[], int toFind) {
+         for (int i = 0; i < array.length; i++) {
+             if (array[i] == toFind) {
+                return true;
+             }
+         }
+         return false;
+     }
+
+     public static int[] bubbleSort(int array[]) {
+         for (int i = 1; i < array.length; i++) {
+             if (array[i] < array[i-1]) {
+                 int temp = array[i];
+                 array[i] = array[i-1];
+                 array[i-1] = temp;
+             }
+         }
+         return array;
+     }
+
+     /** function MergeSort (int array[]) {
      *     if (array.length == 1) {
      *         return array;
      *     } else if (array.length == 2) {

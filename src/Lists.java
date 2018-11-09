@@ -1,6 +1,7 @@
 /**
  * Lam Tran
  * November 2018
+ * CS125
  *
  * List module
  */
