@@ -7,7 +7,11 @@
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String args[]) {
+    /**
+     * Main class to test all java modules created
+     * @param unused
+     */
+    public static void main(String unused[]) {
         algorithms();
     }
 

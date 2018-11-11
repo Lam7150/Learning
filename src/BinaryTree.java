@@ -7,6 +7,9 @@
  */
 
 public class BinaryTree {
+    /**
+     * Node class for linked list (binary tree)
+     */
     protected class Node {
         protected Object value;
         protected Node right;

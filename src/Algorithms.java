@@ -10,6 +10,13 @@ import java.util.Arrays;
 
 public class Algorithms {
 
+    /**
+     * Linear Search method to find number in array in O(n)
+     *
+     * @param array array to be searched
+     * @param toFind target int to find
+     * @return true if target int is in array, otherwise false
+     */
      public static boolean LinearSearch(final int array[], final int toFind) {
          for (int i = 0; i < array.length; i++) {
              if (array[i] == toFind) {
@@ -19,6 +26,12 @@ public class Algorithms {
          return false;
      }
 
+    /**
+     * Bubble sort algorithm to sort array in O(n^2)
+     *
+     * @param unsorted unsorted array to sort
+     * @return sorted array
+     */
      public static int[] bubbleSort(final int unsorted[]) {
          // not done
          int[] sorted = unsorted.clone();
