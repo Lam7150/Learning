@@ -6,9 +6,11 @@
  * Algorithms Module
  */
 
+import java.util.Arrays;
+
 public class Algorithms {
 
-     public static boolean LinearSearch(int array[], int toFind) {
+     public static boolean LinearSearch(final int array[], final int toFind) {
          for (int i = 0; i < array.length; i++) {
              if (array[i] == toFind) {
                 return true;
@@ -17,15 +19,19 @@ public class Algorithms {
          return false;
      }
 
-     public static int[] bubbleSort(int array[]) {
-         for (int i = 1; i < array.length; i++) {
-             if (array[i] < array[i-1]) {
-                 int temp = array[i];
-                 array[i] = array[i-1];
-                 array[i-1] = temp;
+     public static int[] bubbleSort(final int unsorted[]) {
+         // not done
+         int[] sorted = unsorted.clone();
+
+         for (int i = 1; i < sorted.length; i++) {
+             if (sorted[i] < sorted[i-1]) {
+                 int temp = sorted[i];
+                 sorted[i] = sorted[i-1];
+                 sorted[i-1] = temp;
              }
          }
-         return array;
+
+         return sorted;
      }
 
      /** function MergeSort (int array[]) {
