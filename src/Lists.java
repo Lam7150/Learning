@@ -14,7 +14,8 @@ public class Lists {
     public static void main(String args[]) {
         List ArrayList = new ArrayList();
         List LinkedList = new LinkedList();
-
+        ArrayList.add(2);
+        System.out.println(ArrayList.toString());
 
     }
 }
