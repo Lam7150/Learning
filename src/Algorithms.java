@@ -47,7 +47,27 @@ public class Algorithms {
          return sorted;
      }
 
-     /** function MergeSort (int array[]) {
+    /**
+     * Euclidean Algorithm
+     *
+     * @param first larger number
+     * @param divisor divisor
+     * @return gcd of two numbers
+     */
+    public static int gcd(final int first, final int divisor) {
+        if (divisor == 0) {
+            return first;
+        }
+
+        int remainder = first - (int) (Math.floor(first / divisor) * divisor);
+
+        if (remainder == 0)
+            return divisor;
+        else
+            return gcd(divisor, remainder);
+    }
+
+    /** function MergeSort (int array[]) {
      *     if (array.length == 1) {
      *         return array;
      *     } else if (array.length == 2) {

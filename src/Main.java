@@ -12,7 +12,7 @@ public class Main {
      * @param unused
      */
     public static void main(String unused[]) {
-        algorithms();
+        System.out.println(Algorithms.gcd(483, 255));
     }
 
     /**
