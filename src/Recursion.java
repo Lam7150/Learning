@@ -1,12 +1,12 @@
 /**
+ * Lam Tran
+ * November 2018
+ * CS125
+ *
  * Recursion module
  */
 
 public class Recursion {
-    public static void main(String args[]) {
-        System.out.println(fibonacci(5));
-    }
-
     /**
      * Returns number of specified index in the fibonacci sequence.
      *
