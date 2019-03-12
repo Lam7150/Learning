@@ -31,8 +31,24 @@ class Goo {
         cout << "I am number " << id << endl;
     }
 
-    //friend std::ostream& operator<< (std::ostream &out, const Point &point);
+    friend ostream& operator<< (ostream &out, const Goo &goo);
+    friend istream& operator>> (istream &in, Goo &goo);
 };
+
+
+ostream& operator<< (ostream &out, const Goo &goo) {
+    out << "Name | " << goo.name << endl;
+    out << "ID   | " << goo.id << endl;
+
+    return out;
+}
+
+
+istream& operator>> (istream &in, Goo &goo) {
+    in >> goo.id >> goo.name;
+    return in;
+}
+
 
 // definition of printName using scope resolution operator
 void Goo::printName() {
@@ -56,6 +72,12 @@ int main() {
     Goo gooCopy(goo);
     gooCopy.printId();
     gooCopy.printName();
+
+    // Making object from user
+    Goo userGoo;
+    cout << endl << "Input new Goo properties: ";
+    cin >> userGoo;
+    cout << userGoo;
 
     return 0;
 }
