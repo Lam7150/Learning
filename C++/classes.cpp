@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 class Goo {
@@ -78,6 +79,33 @@ int main() {
     cout << endl << "Input new Goo properties: ";
     cin >> userGoo;
     cout << userGoo;
+
+    // Files
+    // Making outfile
+    ofstream outfile;
+    outfile.open("goo.txt");
+
+    // Writing to outfile
+    outfile << "New Goo Class: " << endl;
+    outfile << userGoo << endl;
+
+    // Closing outfile
+    outfile.close();
+
+    // Opening infile
+    ifstream infile;
+    infile.open("goo.txt");
+    char data[100];
+
+    // Grabbing data from infile
+    cout << "Reading from the infile" << endl;
+    infile >> data;
+
+    // Write the data to the screen
+    cout << data << endl;
+
+    // Closing infile
+    infile.close();
 
     return 0;
 }

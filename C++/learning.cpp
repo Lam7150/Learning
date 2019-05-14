@@ -4,9 +4,10 @@ using namespace std;
 
 // Declaring functions
 void math();
+void strings();
 
 int main(int argc, char** argv) {
-    helloWorld();
+    strings();
 }
 
 void math() {
@@ -18,4 +19,11 @@ void math() {
     cout << input << " * 10 = " << input * 10 << endl; 
     cout << input << " / 10 = " << input / 10 << endl; 
     cout << input << " % 10 = " << input % 10 << endl; 
+}
+
+void strings() {
+    string base = "banana";
+    base.replace(2, 2, "AN");
+    cout << base << endl;
+    cout << base.find('A') << endl;
 }
