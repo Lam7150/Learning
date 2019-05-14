@@ -24,13 +24,3 @@ std::vector<int> compareTriplets(std::vector<int> a, std::vector<int> b) {
 
     return results;
 }
-
-int main() {
-    // Test cases
-    std::vector<int> base = {50, 50, 50};
-    std::vector<int> lows = {1, 1, 1};
-    std::vector<int> highs = {100, 100, 100};
-    std::vector<int> h1_l2 = {79, 25, 34};
-    std::vector<int> h2_l1 = {94, 51, 49};
-
-}
