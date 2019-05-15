@@ -12,7 +12,7 @@ public class Main {
      * @param unused
      */
     public static void main(String unused[]) {
-        System.out.println(Algorithms.gcd(483, 255));
+        System.out.println(Recursion.edgesOnHypercube(7) / 2);
     }
 
     /**
@@ -28,8 +28,8 @@ public class Main {
      * Algorithms test module
      */
     public static void algorithms() {
-        int[] unsorted = {2, 9, 4, 3, 7};
+        int[] unsorted = {-1, 2, 9, 4, 3, 7, 0};
 
-        System.out.println(Arrays.toString(Algorithms.bubbleSort(unsorted)));
+        System.out.println(Arrays.toString(Algorithms.insertionSort(unsorted)));
     }
 }
