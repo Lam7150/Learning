@@ -64,4 +64,13 @@ public class Recursion {
         // Recursive call
         return nPaths(x - 1, y) + nPaths(x, y - 1);
     }
+
+    public static int edgesOnHypercube(int dimensions) {
+        // kinda doesn't work, divide by 2 at end
+        if (dimensions == 0) {
+            return 0;
+        }
+
+        return 2 * edgesOnHypercube(dimensions - 1) + (int) Math.pow(2, dimensions);
+    }
 }

@@ -26,6 +26,26 @@ public class Algorithms {
          return false;
      }
 
+     public static int[] insertionSort(int[] array) {
+         int[] sorted = array.clone();
+         int current, j;
+
+         for (int i = 1; i < sorted.length; i++) {
+             current = sorted[i];
+             j = i - 1;
+
+             while (current < sorted[j] && j > 0) {
+                 // insert
+                 sorted[j + 1] = sorted[j];
+                 j--;
+             }
+
+             sorted[j + 1] = current;
+         }
+
+         return sorted;
+     }
+
     /**
      * Bubble sort algorithm to sort array in O(n^2)
      *
