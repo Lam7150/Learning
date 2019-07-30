@@ -67,4 +67,23 @@ function Vehicle(make, model, color) {
     this.getName = function() {
         return this.make + " " + this.model;
     }
+    this.setColor = function(color) {
+        this.color = color;
+    }
 }
+
+let civic = new Vehicle("Honda", "Civic", "White");
+let corolla = new Vehicle("Toyota", "Corolla", "Black");
+
+// Editing properties in javascript are a little weird.
+// Each instance of the class has the Object property "prototype"
+
+// To edit/add a single instance of the "class", edit the prototype:
+//civic.prototype.year = "2014";
+
+// Editing without prototype edits all instances in the class
+corolla.wheels = 3;
+
+console.log(civic);
+console.log(corolla);
+// incomplete
