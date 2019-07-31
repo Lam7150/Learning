@@ -7,6 +7,10 @@
  * Find two lines, which together with x-axis forms a container, such that the container contains the most water.
  * 
  * Note: You may not slant the container and n is at least 2.
+ * 
+ * Results:
+ * Runtime: 16 ms, faster than 95.91% of C++ online submissions for Container With Most Water.
+ * Memory Usage: 9.7 MB, less than 91.90% of C++ online submissions for Container With Most Water.
  **/
 int maxArea(std::vector<int> &height)
 {
