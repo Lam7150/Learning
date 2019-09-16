@@ -1,28 +1,29 @@
 #include <iostream>
 #include <fstream>
+#include "class.hpp"
 using namespace std;
 
 class Goo {
     private:
-    string name;
-    int id;
+        string name;
+        int id;
 
     public:
-    Goo() {
-        cout << "Default constructor called" << endl;
-    }
+        Goo() {
+            cout << "Default constructor called" << endl;
+        }
 
-    Goo(int newId, string newName) {
-        cout << "Parametrized constructor called" << endl;
-        id = newId;
-        name = newName;
-    }
+        Goo(int newId, string newName) {
+            cout << "Parametrized constructor called" << endl;
+            id = newId;
+            name = newName;
+        }
 
-    Goo(Goo &other) {
-        cout << "Copy constructor called" << endl;
-        name = other.name;
-        id = other.id;
-    }
+        Goo(Goo &other) {
+            cout << "Copy constructor called" << endl;
+            name = other.name;
+            id = other.id;
+        }
 
     // not defined in class definition
     void printName();

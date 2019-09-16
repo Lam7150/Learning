@@ -1,6 +1,3 @@
-#ifndef HELLOWORLD_H
-#define HELLOWORLD_H
+#pragma once
 
 void helloWorld();
-
-#endif
